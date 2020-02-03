@@ -4,6 +4,7 @@ import { TodoList } from "./TodoList";
 import { AddTodoForm } from "./AddTodoForm";
 import { PokeMonSearch } from "./PokemonSearch";
 
+
 const initialTodos: Array<Todo> = [
   { text: "Walk the dog", complete: true },
   { text: "write app", complete: false }
@@ -12,7 +13,7 @@ const initialTodos: Array<Todo> = [
 const App: React.FC = () => {
   const [todos, setTodos] = useState(initialTodos);
   const toggleTodo: ToggleTodo = selectedTodo => {
-    const newTodos = todos.map(todo => {
+    const newTodos = todos.map((todo) => {
       if (todo === selectedTodo) {
         return {
           ...todo,

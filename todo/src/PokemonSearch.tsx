@@ -8,7 +8,7 @@ export const PokeMonSearch: React.FC<PokeMonSearchProps>= (props)=>{
 
     return (
         <div>
-            <p>User {props.name} has {props.numberofPokeMons} pokemon} </p>
+            <p>User {props.name} has {props.numberofPokeMons} pokemon </p>
             <input type="text"  />
             <button className ="my-button" >
 

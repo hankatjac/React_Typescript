@@ -13,7 +13,7 @@ class User implements UserInterface {
 
     constructor(name:string, email:string, age:number){
         this.name = name;
-        this.email=email;
+        this.email = email;
         this.age = age;
         console.log('User created: ' + this.name)
     }
